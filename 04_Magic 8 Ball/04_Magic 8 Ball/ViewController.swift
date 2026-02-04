@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         asked()
     }
     
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        asked()
+    }
+    
     func asked(){
         randomQuestion = Int.random(in: 1 ... 5)
         
